@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0C0032;
+    color: #fff;
+    padding: 1.5rem;
+    font-family:'Roboto',sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+.col {
+    flex-basis: 100%;
+    background-color: #240090;
+}
+
+.col-top {
+    height: 10rem;
+}
+
+.col-bottom {
+    height: 25rem;
+    background-color: #190061;
+}
+
+.col-3 {
+    flex-basis: 32%;
+    background-color: #3500D3;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 4rem;
+    align-content: center;
+}
+
+label {
+    display: block;
+    font-size: 1.8rem;
+}
+
+input {
+    width: 15rem;
+    margin: 0 auto;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 3%;
+}
+
+.borrow::after {
+    display: block;
+    content: 'Between £1-£8000';
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+}
+
+.salary::after {
+    display: block;
+    content: 'Default salary of £25,000';
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+}
+
+.percent::after {
+    display: block;
+    content: 'Default of 10%';
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 3rem;
+    border: 0.16rem solid #FFFFFF;
+    margin: 2rem 0.3rem 0.3rem 0;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.15s;
+}
+.button:hover {
+    border-color: #35FFF9;
+}
+.button:active {
+    color: #35FFF9;
+    border-color: #35FFF9;
+}
+
+#messages {
+    color: #f00;
+    line-height: 0.7rem;
+}
+
+#calculationsDisplay {
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+@media only screen and (max-width: 1350px) {
+    label {
+        font-size: 1.3rem;
+    }
+
+    input {
+        width: 10rem;
+        font-size: 1.5rem;
+    }
+
+    .borrow::after {
+        font-size: 1rem;
+        margin-top: 0.2rem;
+    }
+
+    .salary::after {
+        font-size: 1rem;
+        margin-top: 0.2rem;
+    }
+
+    .percent::after {
+        font-size: 1rem;
+        margin-top: 0.2rem;
+    }
+
+    .col-bottom {
+        height: 27rem;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    label .percent {
+        font-size: 1rem;
+    }
+
+    .percent::after {
+        font-size: 0.8rem;
+        margin-top: 0.1rem;
+    }
+
+    #messages {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    .col-bottom {
+        height: 29rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .col-3 {
+        flex-basis: 100%;
+    }
+
+    label {
+        font-size: 1.6rem;
+    }
+
+    .percent::after {
+        font-size: 1rem;
+        margin-top: 0.2rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    h1 {
+       font-size: 3.5rem;
+        padding-top: 0.5rem;
+    }
+
+    .col-bottom {
+        height: 31rem;
+    }
+
+    #calculationsDisplay {
+        font-size: 1.3rem;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    h1 {
+        font-size: 3rem;
+        padding-top: 0.8rem;
+    }
+
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <script src="functions.js"></script>
+    <script src="index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Finance Calculator</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col-top col">
+            <h1>Finance Calculator</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <div class="wrapper">
+                <label class="borrow">Amount to be borrowed:</label>
+                <input id="amountBorrowed" type="number" min="1" max="8000"/>
+            </div>
+        </div>
+        <div class="col-3">
+            <label class="salary">Expected salary:</label>
+            <input id="salary" type="number" placeholder="25000"/>
+        </div>
+        <div class="col-3">
+            <label class="percent">Monthly repayment percentage:</label>
+            <input id="repaymentPercentage" type="number" min="10" placeholder="10"/>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-bottom col">
+            <a class="button" id="calculatorBtn">Calculate</a>
+            <div id="messages"></div>
+            <div id="calculationsDisplay" class="caclulations"></div>
+        </div>
+    </div>
+</body>
+</html>
+
